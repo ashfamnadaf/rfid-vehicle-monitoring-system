@@ -1,0 +1,33 @@
+#define u32 unsigned int
+#define s32 signed int
+typedef unsigned short int u16;
+typedef signed short int s16;
+typedef unsigned char u8; 
+typedef signed char s8;
+extern void delay_sec(unsigned int sec);
+extern void delay_ms(unsigned int ms);
+extern void lcd_cmd(unsigned char cmd);
+extern void lcd_data(unsigned char data);
+extern void lcd_init(void);
+extern void lcd_string(char *ptr);
+extern void lcd_integer(int num);
+extern void lcd_float(float num);
+extern void lcd_hex(int num);
+extern void lcd_oct(int temp);
+extern void lcd_cgram(void);
+extern void uart0_init(unsigned int baud);
+extern void uart0_tx(unsigned char data);
+extern void uart0_tx_string(char *ptr);
+extern unsigned char uart0_rx(void);
+extern void config_vic(void);
+extern void en_uart0_interrupt(void);
+extern void uart0_rx_string(signed char *ptr,signed int max_bytes);
+extern void adc_init(void);
+extern u32 adc_read(s32 ch_num);
+extern void uart0_tx_integer(int num);
+extern void uart0_tx_float(float num);
+extern void i2c_init(void);
+extern void i2c_bytes_write_frame(u8 sa, u8 mr,u8 data);
+extern u8 i2c_byte_read_frame(u8 sa,u8 mr);
+extern unsigned int i;
+extern  char temp[60];
