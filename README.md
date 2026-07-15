@@ -1,40 +1,51 @@
 # RFID Based Vehicle Monitoring System
 
 ##  Overview
-The RFID Based Vehicle Monitoring System is an embedded system project designed to monitor and identify vehicles using RFID technology. The system uses RFID tags and a microcontroller to capture vehicle information and enable real-time monitoring.
+The RFID Based Vehicle Monitoring System is an embedded system project developed using the LPC2129 ARM7 microcontroller and RFID technology. The system identifies and monitors vehicles by reading unique RFID tags and processing the received data using the microcontroller.
 
 ##  Technologies Used
 - Embedded C
-- Microcontroller
+- ARM7 (LPC2129)
 - RFID Module
 - UART Communication
-- Embedded Systems
+- I2C Communication
+- LCD Interface
 
 ##  Features
-- Vehicle identification using RFID tags
+- RFID-based vehicle identification
 - Real-time vehicle monitoring
-- Microcontroller-based processing
-- Serial communication between peripherals
+- UART communication between RFID module and LPC2129
+- LCD display interface
+- Embedded C firmware development
 
 ##  Hardware Components
-- Microcontroller
-- RFID Reader
+- LPC2129 ARM7 Microcontroller
+- RFID Reader Module
 - RFID Tags
-- LCD Display
+- 16x2 LCD Display
 - Power Supply
 
 ##  Software Tools
+- Keil µVision
 - Embedded C Compiler
-- Microcontroller IDE
-- Serial Communication Tools
+- Flash Magic
+
+##  Source Code
+The project firmware contains:
+- UART driver
+- UART interrupt handling
+- I2C driver
+- LCD 4-bit driver
+- Delay functions
+- Main application code
 
 ##  My Contribution
-- Developed embedded C logic
-- Interfaced RFID module with microcontroller
-- Tested and debugged hardware communication
+- Developed Embedded C firmware for LPC2129
+- Interfaced RFID module with ARM7 microcontroller
+- Implemented UART communication
+- Developed peripheral drivers and tested hardware modules
 
 ##  Future Enhancements
 - GPS-based vehicle tracking
-- Cloud-based monitoring
+- Cloud data storage
 - Mobile application integration
-- Real-time database storage
