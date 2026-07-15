@@ -1,3 +1,10 @@
+/*
+ * Project: RFID Based Vehicle Monitoring System
+ * Microcontroller: LPC2129 ARM7
+ * Language: Embedded C
+ * Communication: UART, I2C
+ */
+
 #include <LPC21xx.H>
 #include"header.h"
 main(){
